@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;background:#14110d;height:100%;overflow:hidden}canvas{display:block;width:100vw;height:100vh}
+</style></head><body><canvas id="c"></canvas>
+<script type="module">
+import { Application } from './vendor/spline-runtime.js';
+const app = new Application(document.getElementById('c'));
+app.load('https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode')
+  .then(()=>{ window.__state='loaded'; }).catch(e=>{ window.__state='error '+e.message; });
+</script></body></html>
